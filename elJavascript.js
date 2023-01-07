@@ -9,3 +9,10 @@ function cosaDeRuleta(){
 function limpiar(){
     document.getElementById("texto").innerHTML = "";
 }
+
+function fecha(){
+    let fecha = new Date;
+    document.getElementById("fecha").innerHTML = fecha.getYear()+1900;
+}
+
+window.onload = fecha();
